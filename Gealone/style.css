@@ -1,0 +1,646 @@
+body {
+    font-family: Arial, sans-serif; /* Default font for body */
+    background-color: #0a1324; /* Background color */
+    margin: 0;             /* Remove default margin */
+    padding: 0;            /* Remove default padding */
+    width: 100%;           /* Set width to 100% of the viewport */
+    height: 100%;          /* Optional: for full-height layouts */
+    box-sizing: border-box; /* Include padding and borders in element width/height */
+}
+
+.container {
+    width: 100%;            /* Ensure container spans the full width */
+    max-width: 100%;        /* Prevent exceeding 100% */
+    margin: 0 auto;         /* Center the container (if needed for flex layouts) */
+    padding: 0;             /* Remove extra padding */
+}
+
+
+hr {
+    border: none; /* Remove the default border */
+    height: 4px; /* Set the thickness of the line */
+    background-color: #FFFFFF; /* Set the color of the line */
+    margin: 20px 0; /* Space above and below the line */
+}
+
+h1 {
+    color: #FFF5EE;
+}
+h2 {
+    color: #FFF5EE;
+}
+h2.header {
+    color: #FFF5EE;
+}
+h3 {
+    text-align: center; /* Center heading */
+    color: #333; /* Darker text color */
+}
+h4 {
+    color: #FFF5EE; /* Text color */
+    font-size: 10px; /* Default font size */
+    margin: 10px 0; /* Space around the heading */
+}
+
+/* INFO_COL */
+.information {
+    max-width: 1200px; /* Centers content with a reasonable width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.program {
+    display: flex; /* Makes each section a flex container */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Adds space between image and text */
+    margin-bottom: 40px; /* Adds spacing between sections */
+}
+
+.program-image {
+    max-width: 40%; /* Limits image width to 40% of the container */
+    border-radius: 10px; /* Rounds image corners */
+}
+
+.program-content {
+    flex: 1; /* Allows text to take up the remaining space */
+}
+
+.custom-title {
+    font-size: 24px; /* Sets a clear title size */
+    margin-bottom: 10px;
+}
+
+.custom-text {
+    font-size: 16px; /* Consistent text size for readability */
+    line-height: 1.6; /* Adds spacing between lines */
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* NAVIGATION */
+
+#nav {
+    display: flex; /* Use flexbox to arrange the items */
+    justify-content: space-between; /* Space between the left and right sections */
+    background-color: #FFF5EE; /* Background for nav */
+    padding: 10px 20px; /* Padding for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#nav ul {
+    display: inline-block; /* Ensure the list remains inline */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove bullet points */
+}
+
+#nav ul li {
+    display: inline; /* Ensure inline items */
+    margin-right: 10px; /* Spacing between links */
+    font-family: Bahnschrift, 'Arial', sans-serif; /* Same font for all items */
+    font-weight: semi-bold; /* Same font weight for all items */
+    color: #0a1324; /* Text color for all items */
+    padding: 7px 7px; /* Same padding for all items */
+    background-color: #FFF5EE; /* Background color for all items */
+    border-radius: 5px; /* Rounded corners for all items */
+    text-decoration: none; /* Remove underline from links */
+    
+}
+
+#nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    font-family: Bahnschrift, 'Arial', sans-serif; /* Ensure same font for links */
+    font-weight: semi-bold; /* Same font weight for links */
+    color: #0a1324; /* Text color for links */
+    padding: 7px 7px; /* Padding inside links */
+    background-color: #FFF5EE; /* Background color for links */
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+#nav ul li a:hover {
+    background-color: #203e64; /* Darker background on hover */
+    color: #FFF5EE; /* Light text color on hover */
+}
+
+#nav ul.right {
+    text-align: right; /* Align the navigation items to the right */
+}
+
+
+/* REGISTER_VIEW_USERS */
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white; /* Set table background to white */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    color: #0a1324; /* Change text color for better contrast */
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+}
+
+th {
+    background-color: #2a2f3b; /* Keep the header background dark */
+    color: #FFF5EE; /* Light text for contrast */
+    text-transform: uppercase; /* Make header text uppercase */
+    letter-spacing: 1px; /* Slightly space letters for better readability */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+tr:hover {
+    background-color: #3a4754; /* Keep hover effect for rows */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Action Links Styling */
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #5999bf; /* Blue color for links */
+    margin-right: 15px; /* Space between links */
+    font-weight: bold; /* Bold font style */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+a:hover {
+    color: #45a049; /* Green color on hover */
+}
+
+/* Error Styling */
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Additional Design for Content */
+#content {
+    background-color: #FFF5EE; /* Light background for content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px 0; /* Space around content */
+}
+
+#content h2 {
+    font-family: Bahnschrift, Arial, sans-serif;
+    color: #0a1324;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Overall Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1324; /* Light background for body */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* REGISTER_PAGE */
+
+
+/* Center the entire body content */
+.centered-body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1324; /* Dark background */
+    display: flex; /* Flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for the form */
+.register-container {
+    background-color: #FFF5EE; /* Light background for the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding around content */
+    width: 300px; /* Fixed width */
+}
+
+/* Form container */
+.form-container {
+    text-align: left; /* Left align text */
+}
+h2.regis {
+    color:black; /* Left align text */
+}
+/* Labels for inputs */
+.label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #555; /* Gray color for labels */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below inputs */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #5999bf; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for submit button */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Green on hover */
+}
+
+/* Error messages */
+.error {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center error messages */
+}
+
+
+
+/* REGISTER THANKS */
+
+
+        /* Global Body Styling */
+        body.thankyou {
+            font-family: Bahnschrift, Arial, sans-serif;
+            background-color: #0a1324; /* Dark background */
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height */
+            display: flex; /* Flexbox for centering content */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Ensures content is stacked vertically */
+        }
+
+        /* Unique Container for Thank You Page */
+        #thankYouContent {
+            background-color: #FFF5EE; /* Light background for content */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 500px; /* Fixed width */
+            text-align: center; /* Center text inside the container */
+        }
+
+        /* Unique Heading Style for Thank You Page */
+        #thankYouContent h2 {
+            font-size: 28px;
+            color: #0a1324;
+            margin-bottom: 20px;
+        }
+
+        /* Unique Paragraph Styling for Thank You Page */
+        #thankYouContent p {
+            font-size: 18px;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        /* Unique Button Styling for Thank You Page */
+        .thankYouBtn {
+            display: inline-block;
+            background-color: #5999bf; /* Button color */
+            color: white; /* White text */
+            text-decoration: none;
+            padding: 15px 5px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for text color */
+            margin-top: 20px;
+            text-align: center;
+            width: 100%; /* Full-width button */
+        }
+
+        .thankYouBtn:hover {
+            background-color: #45a049; /* Darker green on hover */
+            color: white; /* Keep the text white on hover */
+        }
+
+        /* Unique Table Styling (Shared between pages) */
+        .uniqueTable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        .uniqueTable th, .uniqueTable td {
+            padding: 12px;
+            text-align: left;
+            color: #0a1324; /* Text color */
+            font-family: Arial, sans-serif;
+        }
+
+        .uniqueTable th {
+            background-color: #2a2f3b; /* Dark header background */
+            color: #FFF5EE;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .uniqueTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .uniqueTable tr:hover {
+            background-color: #3a4754;
+            cursor: pointer;
+        }
+
+        .uniqueLinks a {
+            text-decoration: none;
+            color: #5999bf; /* Blue link color */
+            margin-right: 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .uniqueLinks a:hover {
+            color: #45a049; /* Green on hover */
+        }
+
+        /* Unique Error Styling */
+        .errorMessage {
+            color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+
+        /* DELETE_USERS */
+
+        body.delete {
+            font-family: Bahnschrift, Arial, sans-serif;
+            background-color: #0a1324;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Unique Container Styling for Delete Page */
+        #deleteUserContent {
+            background-color: #FFF5EE;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+
+        /* Heading Style */
+        #deleteUserContent h2 {
+            font-size: 28px;
+            color: #0a1324;
+            margin-bottom: 20px;
+        }
+
+        /* Subheading Style */
+        #deleteUserContent h3 {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styling */
+        .deleteUserBtn {
+            display: inline-block;
+            background-color: #5999bf; /* Button color */
+            color: white; /* White text */
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            text-align: center;
+            border: none; /* Remove border */
+            outline: none; /* Remove outline */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        
+        .deleteUserBtn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Error and Success Messages */
+        .deleteUserError {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .deleteUserSuccess {
+            color: #32CD32;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+    
+
+
+        /* EDIT_USER */
+
+
+        body.edit {
+            font-family: Bahnschrift, Arial, sans-serif;
+            background-color: #0a1324;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Unique Container Styling for Edit Page */
+        #editUserContent {
+            background-color: #FFF5EE;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+
+        /* Heading Style */
+        #editUserContent h2 {
+            font-size: 28px;
+            color: #0a1324;
+            margin-bottom: 20px;
+        }
+
+        /* Subheading Style */
+        #editUserContent label {
+            font-size: 18px;
+            color: #555;
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        /* Input Field Styling */
+        #editUserContent input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Button Styling */
+        .editUserBtn {
+            display: inline-block;
+            background-color: #5999bf;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            text-align: center;
+            border: none; /* Remove border */
+            outline: none; /* Remove outline */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .editUserBtn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Error and Success Messages */
+        .editUserError {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .editUserSuccess {
+            color: #32CD32;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+
+ /* LOGIN */
+
+
+
+/* Global Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Bahnschrift, Arial, sans-serif; /* Use the same font */
+    background-color: #0a1324; /* Dark background */
+}
+
+/* Main Container Styling */
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Login Form Container */
+#login-form-container {
+    background-color: #FFF5EE; /* Light neutral background to match other containers */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    margin: auto; /* Center the form vertically and horizontally */
+}
+
+/* Login Form Header */
+#login-form-container h2 {
+    font-size: 28px;
+    color: #0a1324; /* Match text color with other headings */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input Label Styling */
+.login-form-label {
+    font-size: 16px;
+    color: #444444; /* Dark gray for labels */
+    text-align: left;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Field Styling */
+.login-form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.login-form-input:focus {
+    border-color: #5999bf; /* Keep focus color consistent */
+    outline: none;
+}
+
+/* Submit Button Styling */
+.login-form-submit {
+    background-color: #5999bf; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.login-form-submit:hover {
+    background-color: #457c9f; /* Darker blue on hover */
+}
